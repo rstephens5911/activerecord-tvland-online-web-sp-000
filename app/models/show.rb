@@ -4,6 +4,9 @@ class Show < ActiveRecord::Base
   belongs_to :network
 
   def actors_list
-    full_name = "#{self.first_name} #{self.last_name}"
+    self.name
   end
+
+
+  
 end
